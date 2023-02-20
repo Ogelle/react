@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: sans-serif;
+    src: url();
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    background-image: url();
+}
+
+.page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover {
+    background-color: red;
+    width: 30em;
+    height: 45em;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.alt-login{
+    width: 80%;
+    height: 3em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.alt-login div{
+    width: 45%;
+    height: 90%;
+    border-radius: 0.25em;
+    background-color: black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.alt-log{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login-btn{
+    cursor: pointer;
+    padding: 15px 30px;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.login-btn:hover{
+    background: #000;
+    color: bisque;
+    transition: 7s;
+}
+
+input{
+    border: none;
+    background: rgb(255, 255, 255);
+    height: 4em;
+    width: 80%;
+    border-radius: 0.25em;
+    text-align: center;
+    padding: 2em;
+}
+
+input:focus{
+    outline-color: rgb(255, 255, 255);
+}
+
+.login-btn{
+    width: 50%;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+    border-radius: 0.50em;
+    cursor: pointer;
+}
+
+.login-btn:hover{transform: scale(1.25);}
+
+.text{
+    position:relative;
+    bottom: -0.3em;
+}
+.hide {
+    position: absolute;
+    transform: scale(0);
+}
+
+.login-popup{
+    position: absolute;
+    height: 23em;
+    width: 28em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25em;
+    background-color: rgb(78, 2, 2);
+    color: #fff;
+    bottom: 4;
+    transform: scale(1);
+    transform: 1s;
+}
